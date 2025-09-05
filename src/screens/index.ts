@@ -1,0 +1,3 @@
+export { LoginScreen as ScreenLogin } from "./Login"
+export { RegisterScreen as ScreenRegister } from "./Register"
+export { PerfilScreen as ScreenPerfil } from "./Perfil"
