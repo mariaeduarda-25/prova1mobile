@@ -1,13 +1,11 @@
 import { createNativeStackNavigator, NativeStackNavigationProp } from "@react-navigation/native-stack"
 import { ScreenCamera, ScreenLista } from "../screens"
 import { StaticParamList } from "@react-navigation/native"
+import {IDados} from "../services/data"
 
-export interface IParam {
-    name: string
-}
 type ImagemParamList = {
     Camera: undefined
-    Lista: IParam
+    Lista: IDados
 }
 type ImagemScreenProp = NativeStackNavigationProp<ImagemParamList, 'Camera'>
 export type ImagemTypes = {
