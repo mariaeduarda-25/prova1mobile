@@ -1,15 +1,20 @@
+// Define uma interface chamada IDados, que funciona como um "contrato" de tipagem.
+// Serve para garantir que todos os objetos sigam o mesmo formato.
 export interface IDados {
-  id: string
-  banda: string
-  album: string
-  ano: number
-  musicas: number
-  user: {
-    name: string
-    disponivel: boolean
+  id: string           // Identificador único do disco (ex: "disco-1").
+  banda: string        // Nome da banda/artista.
+  album: string        // Nome do álbum.
+  ano: number          // Ano de lançamento do álbum.
+  musicas: number      // Quantidade de músicas no álbum.
+  user: {              // Objeto representando o usuário associado ao disco.
+    name: string       // Nome do usuário.
+    disponivel: boolean // Indica se o usuário está disponível (true/false).
   }
 }
-export const dados:IDados[] = [
+
+// Cria uma constante chamada dados, que é um array de objetos do tipo IDados.
+// Cada objeto dentro do array representa um disco com suas informações.
+export const dados: IDados[] = [
   {
     id: "disco-1",
     banda: "ACDC",
